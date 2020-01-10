@@ -12,14 +12,14 @@
  */
 
 
-enum CNoiseCipher {
+enum CNoiseCipher: int {
     CNoiseCipherNone        = NOISE_CIPHER_NONE,
     CNoiseCipherCategory    = NOISE_CIPHER_CATEGORY,
     CNoiseCipherChaChaPoly  = NOISE_CIPHER_CHACHAPOLY,
     CNoiseCipherAESGCM      = NOISE_CIPHER_AESGCM
 };
 
-enum CNoiseHash {
+enum CNoiseHash: int {
     CNoiseHashNone      = NOISE_HASH_NONE,
     CNoiseHashCategory  = NOISE_HASH_CATEGORY,
     CNoiseHashBlake2s   = NOISE_HASH_BLAKE2s,
@@ -28,7 +28,7 @@ enum CNoiseHash {
     CNoiseHashSHA512    = NOISE_HASH_SHA512
 };
 
-enum CNoiseDH {
+enum CNoiseDH: int {
     CNoiseDHNone        = NOISE_DH_NONE,
     CNoiseDHCategory    = NOISE_DH_CATEGORY,
     CNoiseDHCurve25519  = NOISE_DH_CURVE25519,
@@ -36,7 +36,7 @@ enum CNoiseDH {
     CNoiseDHNewHope     = NOISE_DH_NEWHOPE,
 };
 
-enum CNoisePattern {
+enum CNoisePattern: int {
     CNoisePatternNone           = NOISE_PATTERN_NONE,
     CNoisePatternCategory       = NOISE_PATTERN_CATEGORY,
     CNoisePatternN              = NOISE_PATTERN_N,
@@ -81,25 +81,25 @@ enum CNoisePattern {
     CNoisePatternIX_NODIH_HFS   = NOISE_PATTERN_IX_NOIDH_HFS
 };
 
-enum CNoisePrefix {
+enum CNoisePrefix: int {
     CNoisePrefixNone        = NOISE_PREFIX_NONE,
     CNoisePrefixCategory    = NOISE_PREFIX_CATEGORY,
     CNoisePrefixStandard    = NOISE_PREFIX_STANDARD,
     CNoisePrefixPSK         = NOISE_PREFIX_PSK
 };
 
-enum CNoiseSignature {
+enum CNoiseSignature: int {
     CNoiseSignatureNone     = NOISE_SIGN_NONE,
     CNoiseSignatureCategory = NOISE_SIGN_CATEGORY,
     CNoiseSignatureED25519  = NOISE_SIGN_ED25519
 };
 
-enum CNoiseRole {
+enum CNoiseRole: int {
     CNoiseRoleInitiator = NOISE_ROLE_INITIATOR,
     CNoiseRoleResponder = NOISE_ROLE_RESPONDER
 };
 
-enum CNoiseAction {
+enum CNoiseAction: int {
     CNoiseActionNone        = NOISE_ACTION_NONE,
     CNoiseActionWrite       = NOISE_ACTION_WRITE_MESSAGE,
     CNoiseActionRead        = NOISE_ACTION_READ_MESSAGE,
@@ -108,17 +108,17 @@ enum CNoiseAction {
     CNoiseActionComplete    = NOISE_ACTION_COMPLETE
 };
 
-enum CNoisePadding {
+enum CNoisePadding: int {
     CNoisePaddingZero   = NOISE_PADDING_ZERO,
     CNoisePaddingRandom = NOISE_PADDING_RANDOM
 };
 
-enum CNoiseFingerprint {
+enum CNoiseFingerprint: int {
     CNoiseFingerprintBasic  = NOISE_FINGERPRINT_BASIC,
     CNoiseFingerprintFull   = NOISE_FINGERPRINT_FULL
 };
 
-enum CNoiseErrorCode {
+enum CNoiseErrorCode: int {
     CNoiseErrorNone = NOISE_ERROR_NONE,
     CNoiseErrorNoMemory = NOISE_ERROR_NO_MEMORY,
     CNoiseErrorUnknownID = NOISE_ERROR_UNKNOWN_ID,
