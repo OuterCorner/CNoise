@@ -32,7 +32,7 @@ enum CNoiseDH: int {
     CNoiseDHNone        = NOISE_DH_NONE,
     CNoiseDHCategory    = NOISE_DH_CATEGORY,
     CNoiseDHCurve25519  = NOISE_DH_CURVE25519,
-    CNoiseDHCurvs448    = NOISE_DH_CURVE448,
+    CNoiseDHCurve448    = NOISE_DH_CURVE448,
     CNoiseDHNewHope     = NOISE_DH_NEWHOPE,
 };
 
